@@ -12,19 +12,18 @@ export default {
 
 </template>
   
-  <style lang="scss" scoped>
-  @use '../../styles/partials/variables.scss' as *;
-  
-  .jumbo {
-    background-color: #1c1c1c;
-    min-height: 150px;
-  }
+<style lang="scss" scoped>
+@use '../../styles/partials/variables.scss' as *;
 
-  h1 {
-    color: white;
-    padding-top: 50px;
-    margin-left: 70px;
-    padding-left: 60px;
-  }
+.jumbo {
+  background-color: #1c1c1c;
+  min-height: 150px;
+}
 
-  </style>
+h1 {
+  color: white;
+  padding-top: 50px;
+  margin-left: 70px;
+  padding-left: 60px;
+}
+</style>
