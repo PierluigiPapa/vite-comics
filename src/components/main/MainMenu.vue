@@ -85,7 +85,6 @@ export default {
       }
       
       .text {
-        text-transform: uppercase;
         color: white;
         padding-left: 20px;
       }
