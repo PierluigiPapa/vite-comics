@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container-footer">
         <div class="content">
             <div class="menu">
                 <MenuFooter></MenuFooter>
@@ -33,6 +33,30 @@ export default {
 <style lang="scss" scoped>
 @use '../../styles/partials/variables.scss' as *;
 
+.container-footer {
+    max-width: 1520px;
+    .content {
+        margin: auto;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        padding: 30px 0;
+        background-image: url('/img/footer-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        .menu {
+            z-index: 1;
+        }
 
+        .logo {
+            position: absolute;
+            right: 0;
+            top: -40px;
+        }
+    }
 
+    .contacts {
+        background-color: $greydark;
+    }
+}
 </style>
