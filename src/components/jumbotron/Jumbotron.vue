@@ -5,9 +5,11 @@ export default {
 </script>
 
 <template>
-    <div class="jumbo">
-    <h1> &#8594; Content goes here &#8592; </h1>
-    </div>
+  
+<div class="jumbo">
+  <h1> &#8594; Content goes here &#8592; </h1>
+</div>
+
 </template>
   
   <style lang="scss" scoped>

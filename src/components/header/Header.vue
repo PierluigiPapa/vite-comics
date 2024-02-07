@@ -3,58 +3,67 @@ export default {
   name: 'Header',
   data () {
     return {
-        navLi: [
+      navLi: [
         {
-        text: "CHARACTERS",
-        link: "#",
-        current: false
-    },
-    {
-        text: "COMICS",
-        link: "#",
-        current: false
-    },
-    {
-        text: "MOVIES",
-        link: "#",
-        current: false
-    },
-    {
-        text: "TV",
-        link: "#",
-        current: false
-    },
-    {
-        text: "GAMES",
-        link: "#",
-        current: false
-    },
-    {
-        text: "COLLECTIBLES",
-        link: "#",
-        current: false
-    },
-    {
-        text: "VIDEOS",
-        link: "#",
-        current: false
-    },
-    {
-        text: "FANS",
-        link: "#",
-        current: false
-    },
-    {
-        text: "NEWS",
-        link: "#",
-        current: false
-    },
-    {
-        text: "SHOP",
-        link: "#",
-        current: false
-    }
-]
+          text: "CHARACTERS",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "COMICS",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "MOVIES",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "TV",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "GAMES",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "COLLECTIBLES",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "VIDEOS",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "FANS",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "NEWS",
+          link: "#",
+          current: false
+        },
+        
+        {
+          text: "SHOP",
+          link: "#",
+          current: false
+        }
+      ]
     }
   }
 };
@@ -71,46 +80,46 @@ export default {
         </ul>
       </div>
     </header>
-  </template>
+</template>
   
-  <style lang="scss" scoped>
-  @use '../../styles/partials/variables.scss' as *;
+<style lang="scss" scoped>
+@use '../../styles/partials/variables.scss' as *;
+
+header {
+  background-color: #fff;
+  font-size: 15px;
   
-  header {
-    background-color: #fff;
-    font-size: 15px;
+  .container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-    .container {
-      height: 100px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  img {
+    height: 70%;
+  }
   
-    img {
-      height: 70%;
-    }
+  ul {
+    flex-grow: 1;
+    text-align: right;
+    line-height: 95px;
   
-    ul {
-      flex-grow: 1;
-      text-align: right;
-      line-height: 95px;
-  
-      li {
-        display: inline-block;
-        font-weight: bold;
-        color: $grey;
-        margin: 0 10px;
-        &:hover {
-          cursor: pointer;
-          color: $blue;
-          border-bottom: 5px solid $blue;
-        }
-        &.active {
-          color: $blue;
-          border-bottom: 5px solid $blue;
-        }
+    li {
+      display: inline-block;
+      font-weight: bold;
+      color: $grey;
+      margin: 0 10px;
+      &:hover {
+        cursor: pointer;
+        color: $blue;
+        border-bottom: 5px solid $blue;
+      }
+      &.active {
+        color: $blue;
+        border-bottom: 5px solid $blue;
       }
     }
   }
-  </style>
+}
+</style>
