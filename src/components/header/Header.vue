@@ -79,7 +79,6 @@ export default {
   header {
     background-color: #fff;
     font-size: 15px;
-    padding-top: 25px;
   
     .container {
       height: 100px;
@@ -90,14 +89,12 @@ export default {
   
     img {
       height: 70%;
-      padding-left: 150px;
     }
   
     ul {
       flex-grow: 1;
       text-align: right;
       line-height: 95px;
-      padding-right: 70px;
   
       li {
         display: inline-block;
