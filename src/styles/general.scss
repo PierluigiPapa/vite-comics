@@ -1,3 +1,5 @@
+@use './partials/variables' as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -15,5 +17,5 @@ li {
 
 a {
     text-decoration: none;
-    color: #535055;
+    color: $grey;
 }

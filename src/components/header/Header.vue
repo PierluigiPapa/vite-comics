@@ -12,7 +12,7 @@ export default {
     {
         text: "COMICS",
         link: "#",
-        current: true
+        current: false
     },
     {
         text: "MOVIES",
@@ -61,55 +61,59 @@ export default {
 </script>
 
 <template>
-     <header>
-        <div class="container">
-            <img src="/img/dc-logo.png" alt="Logo_DC_Comics">
-            <ul>
-                <li v-for="(item, index) in navLi" :key="index" :class="{active : item.current}"><a href="item.link">{{item.text}}</a></li>
-            </ul>
-        </div>
+    <header>
+      <div class="container">
+        <img src="/img/dc-logo.png" alt="Logo_DC_Comics">
+        <ul>
+          <li v-for="(item, index) in navLi" :key="index" :class="{active: item.current}">
+            <a :href="item.link">{{item.text}}</a>
+          </li>
+        </ul>
+      </div>
     </header>
-</template>
-
-<style lang="scss"scoped>
-@use '../../styles/partials/variables.scss' as *;
-
-header {
+  </template>
+  
+  <style lang="scss" scoped>
+  @use '../../styles/partials/variables.scss' as *;
+  
+  header {
     background-color: #fff;
     font-size: 15px;
     padding-top: 25px;
-
+  
     .container {
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+  
     img {
-        height: 70%;
-        padding-left: 150px;
+      height: 70%;
+      padding-left: 150px;
     }
+  
     ul {
-        flex-grow: 1;
-        text-align: right;
-        line-height: 95px;
-        padding-right: 70px;
-
-        li {
-            display: inline-block;
-            font-weight: bold;
-            color: $grey;
-            margin: 0 10px;
-            &:hover {
-                cursor: pointer;
-                color: $blue;
-            }
+      flex-grow: 1;
+      text-align: right;
+      line-height: 95px;
+      padding-right: 70px;
+  
+      li {
+        display: inline-block;
+        font-weight: bold;
+        color: $grey;
+        margin: 0 10px;
+        &:hover {
+          cursor: pointer;
+          color: $blue;
+          border-bottom: 5px solid $blue;
         }
-        .active {
-            color: $blue;
-            border-bottom: 5px solid $blue;
+        &.active {
+          color: $blue;
+          border-bottom: 5px solid $blue;
         }
+      }
     }
-}
-
-</style>
+  }
+  </style>
