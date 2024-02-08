@@ -6,9 +6,7 @@ export default {
 
 <template>
   
-<div class="jumbo">
-  <h1> &#8594; Content goes here &#8592; </h1>
-</div>
+<div class="jumbo"></div>
 
 </template>
   
@@ -16,8 +14,9 @@ export default {
 @use '../../styles/partials/variables.scss' as *;
 
 .jumbo {
-  background-color: #1c1c1c;
-  min-height: 150px;
+  background-image: url('img/jumbotron.jpg');
+  background-size: cover;
+  min-height: 500px;
 }
 
 h1 {
