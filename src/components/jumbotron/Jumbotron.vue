@@ -19,10 +19,4 @@ export default {
   min-height: 500px;
 }
 
-h1 {
-  color: white;
-  padding-top: 50px;
-  margin-left: 70px;
-  padding-left: 60px;
-}
 </style>
