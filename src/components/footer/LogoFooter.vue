@@ -11,6 +11,7 @@
 @use '../../styles/partials/variables.scss' as *;
 
 .logo-footer {
+    width: 750px;
     padding-right: 100px;
 }
 

@@ -72,6 +72,7 @@ export default {
 
     h3 {
         color: $blue;
+        white-space: nowrap;
     }
 
     ul {

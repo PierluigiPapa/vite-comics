@@ -1,14 +1,14 @@
 <script>
 import Header from './components/header/Header.vue';
 import Jumbotron from './components/jumbotron/Jumbotron.vue';
-import MainMenu from './components/main/MainMenu.vue';
+import Main from './components/main/Main.vue';
 import Footer from './components/footer/Footer.vue';
 
 export default {
   components: {
     Header,
     Jumbotron,
-    MainMenu,
+    Main,
     Footer,
   }
 }
@@ -21,7 +21,9 @@ export default {
 
 <Jumbotron></Jumbotron>
 
-<MainMenu></MainMenu>
+<main>
+  <Main></Main>
+</main>
 
 <footer>
   <Footer></Footer>
