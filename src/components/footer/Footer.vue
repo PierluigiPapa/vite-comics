@@ -34,7 +34,7 @@ export default {
 @use '../../styles/partials/variables.scss' as *;
 
 .container-footer {
-    max-width: 1520px;
+    max-width: 100%;
     .content {
         margin: auto;
         display: flex;
