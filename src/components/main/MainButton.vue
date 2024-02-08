@@ -20,6 +20,11 @@ export default {
     padding: 20px 100px;
     color: white;
     font-size: 30px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $blue-hover;
+    }
 }
 
 

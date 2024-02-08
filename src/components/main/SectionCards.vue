@@ -104,7 +104,7 @@ export default {
         <div class="content">
             <h3 class="main-title">CURRENT SERIES</h3>
             <div class="cards">
-                <card v-for="card in cardComics" :image="card.thumb" :title="card.series" />
+                <Card v-for="card in cardComics" :image="card.thumb" :title="card.series" />
             </div>
             <div class="load-more">
                 <MainButton></MainButton>
@@ -145,6 +145,7 @@ export default {
             flex-wrap: wrap;
             justify-content: center;
             margin: auto;
+            text-transform: uppercase;
             
             .text {
                 padding-top: 5px;
